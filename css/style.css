@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+.conteneur-header {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 50px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+main {
+	background-color: #F7F7F7;
+    padding: 10px 5%;
+}
+header {
+	background-color: #011332;
+    color: white;
+    padding: 20px;
+}
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    margin: 15px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav ul {
+    font-size: 1.4rem;
+    font-family: "Cormorant Garamond", serif;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.logo {
+    width: 35rem;
+	display: block;
+	margin: 0 auto;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+header p {
+    margin-top: 5px;
+}
+
+.contenu-header {
+    flex: 1;
+    margin:0;
+}
+.grille-chroniques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+article {
+    border: 1px solid #d5d5d5;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+article img {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.titres {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    margin:0;
+    padding:0;
+}
+h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+}
+.accroche {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    min-height: 1.1em;
+    margin: 0;
+}
+.infos-album {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.1rem;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.chronique{
+	margin:5%;
+	padding-top:5%;
+	padding-left:10%;
+	padding-right:10%;
+	padding-bottom:10%;
+}
+.contenu-chronique {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.contenu-chronique a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.contenu-chronique a:hover {
+    color: #14376A;
+}
+.entete-chronique {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.entete-chronique img {
+    width: 320px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.infos-chronique {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    flex: 0 1 auto;
+    padding-left : 20%
+}
+
+.infos-chronique .accroche {
+    font-size: 1.6rem;
+}
+
+.texte-chronique {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.4rem;
+}
+
+.signature {
+	font-family: "Cormorant Garamond", serif;
+    font-size: 1.4rem;
+    text-align: right;
+}
+.lien-bandcamp {
+	padding-top:40px;
+	font-family: "Cormorant Garamond", serif;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.a-propos p{
+	font-family: "Cormorant Garamond", serif;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.contact p{
+	font-family: "Cormorant Garamond", serif;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+footer {
+    background-color: #011332;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+
+    /* HEADER */
+	.logo{
+		width:21rem;
+		display: block;
+		margin: 0 auto;
+	}
+    .conteneur-header {
+        flex-direction: column;
+        gap: 0px;
+        padding: 0 10px;
+        justify-content: center;
+		align-items: center;
+    }
+
+    .contenu-header {
+        width: 100%;
+    }
+
+    .titres {
+        text-align: center;
+		font-size: 1.5rem;
+    }
+
+    nav ul {
+		font-size: 1.2rem;
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+    }
+
+
+    /* GRILLE DES CHRONIQUES */
+
+    .grille-chroniques {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PAGE D'UNE CHRONIQUE */
+
+    .chronique {
+        margin: 0;
+        padding: 30px 5%;
+    }
+
+    .entete-chronique {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .entete-chronique img {
+        width: 80%;
+        max-width: 320px;
+    }
+
+    .infos-chronique {
+        width: 100%;
+        padding-left: 0;
+        font-size: 1.4rem;
+    }
+
+    .infos-chronique .accroche {
+        font-size: 1.5rem;
+    }
+
+    .texte-chronique {
+        font-size: 1.2rem;
+    }
+    .lien-bandcamp {
+        font-size: 1.2rem;
+    }
+    .signature {
+		font-size: 1.2rem;
+	}
+	.a-propos p{
+    font-size: 1.2rem;
+	}
+	.contact p{
+    font-size: 1.2rem;
+	}
+}
